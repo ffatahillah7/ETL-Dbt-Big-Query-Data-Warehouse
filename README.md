@@ -78,21 +78,28 @@ Extract data from csv, Transform and load to Google Big Query using Data Build T
      
 ##  Upload raw data files
    Copy your data raw to seeds folder and run dbt seed using cli
+   
    This process is to upluad your data raw files to Big Query dataset as a raw table
+   
    ```
    dbt seed
    ```
 ##  Create Models
    In this step, create staging and warehouse folder under models folder
+   
    create sql file for staging and datawarehouse query
+   
    This Process is to create table staging and table data warehouse with your custom query
+   
    run using dbt cli command
    ```
    dbt run
    ```
 ##  Create test
    In this step is to create schema with table documentation
+   
    create schema.yml for database / warehouse documentation under models folder
+   
    run using dbt cli command
    ```
    dbt test
@@ -100,6 +107,7 @@ Extract data from csv, Transform and load to Google Big Query using Data Build T
 
 ##  Create Documentation
    In This Step is to create documentation web from localhost
+   
    ```
    dbt docs generate
    ```
