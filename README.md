@@ -10,3 +10,24 @@ Extract data from csv, Transform and load to Google Big Query using Data Build T
 4.  Have install Jupyter Notebook for Transform csv data
 
 # Hands On 
+##  Install dbt-bigquery
+1.  Create virtual environment ( for isolate the project )
+   '''
+    python3 -m venv dbt-project
+   '''
+3.  Acivate virtual environment
+4.  Install using pip command
+    
+##  Check Dbt Version
+##  Setup dbt big query init 
+Create file profiles.yml
+update dbt_project.yml
+  remove example
+  and add +materialized: table
+  under model>online_store
+ 
+##  Test dbt connection
+##  Upload raw data files
+##  Create Models
+##  Create test
+##  Create Documentation
