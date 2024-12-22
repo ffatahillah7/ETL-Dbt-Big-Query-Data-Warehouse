@@ -38,32 +38,32 @@ Extract data from csv, Transform and load to Google Big Query using Data Build T
    Which database would you like to use?
    [1] bigquery
 
-   (Don't see the one you want? https://docs.getdbt.com/docs/available-adapters)
+      (Don't see the one you want? https://docs.getdbt.com/docs/available-adapters)
 
-   Enter a number: 1
+      Enter a number: 1
 
-   [1] oauth
-   [2] service_account
-   Desired authentication method option (enter a number): 2
+      [1] oauth
+      [2] service_account
+      Desired authentication method option (enter a number): 2
 
-   keyfile (/path/to/bigquery/keyfile.json): /home/abay/conf/ff-ngulik-xxxxx.json (Change with your service account key file from Gcp)
+      keyfile (/path/to/bigquery/keyfile.json): /home/abay/conf/ff-ngulik-xxxxx.json (Change with your service account key file from Gcp)
 
-   project (GCP project id): ff-ngulik-xx (change with your Project ID in GCP)
+      project (GCP project id): ff-ngulik-xx (change with your Project ID in GCP)
 
-   dataset (the name of your dbt dataset): dwh_online_store (change with your dataset in big query)
+      dataset (the name of your dbt dataset): dwh_online_store (change with your dataset in big query)
 
-   threads (1 or more): 1
-   job_execution_timeout_seconds [300]: 300
-   [1] US
-   [2] EU
-   Desired location option (enter a number): 1
+      threads (1 or more): 1
+      job_execution_timeout_seconds [300]: 300
+      [1] US
+      [2] EU
+      Desired location option (enter a number): 1
 
-   Create file profiles.yml
+      Create file profiles.yml
    
-   update dbt_project.yml
-     remove example
-     and add +materialized: table
-     under model > online_store
+      update dbt_project.yml
+        remove example
+        and add +materialized: table
+        under model > online_store
  
 ##  Test dbt connection
 1.   cd to project folder
