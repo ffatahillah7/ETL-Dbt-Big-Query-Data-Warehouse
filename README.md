@@ -1,15 +1,12 @@
 Welcome to your new dbt project!
 
-### Using the starter project
+# ETL DBT Google Big Query Data Warehouse
+Extract data from csv, Transform and load to Google Big Query using Data Build Tool (DBT)
 
-Try running the following commands:
-- dbt run
-- dbt test
+# Prerequisite
+1.  Have Big Query Account
+2.  Have python3 and pip Library
+3.  Using Ubuntu 20.04 on this Project
+4.  Have install Jupyter Notebook for Transform csv data
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+# Hands On 
