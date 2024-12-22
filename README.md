@@ -111,7 +111,7 @@ Extract data from csv, Transform and load to Google Big Query using Data Build T
    ```
    dbt docs generate
    ```
-   dbt docs serve --port 8100
-   ```
    
+   ```
+   dbt docs serve --port 8100
    ```
