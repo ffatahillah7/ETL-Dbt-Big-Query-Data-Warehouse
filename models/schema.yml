@@ -1,0 +1,49 @@
+
+version: 2
+
+models:
+  - name: stg_order_items
+    description: "A data of order items detail with price and date shipping"
+    columns:
+      - name: order_id
+        description: Id of order and The primary key for this table
+
+      - name: order_item_id 
+        description: The primary key for this table
+
+      - name: product_id
+        description : The Foreign Key for Product_dataset Table 
+        
+      - name: seller_id 
+        description: The Foreign Key for Seller_dataset Table
+
+      - name: shipping_limit_date 
+        description: Date Shipping
+
+      - name: price 
+        description: Price for each orders
+        
+      - name: freight_value 
+
+  - name: stg_product
+    description: "A product name and category"
+    columns:
+      - name: product_id Product_id The primary key for this table
+      - name: product_category_name The name of product
+      - name: product_name_lenght Number of product_name_lenght
+      - name: product_description_lenght Number of product_description_lenght
+      - name: product_photos_qty Number of product_photos_qty
+      - name: product_weight_g Number of product_weight_g
+      - name: product_length_cm Number of product_length_cm
+      - name: product_height_cm Number of product_height_cm
+      - name: product_width_cm Number of product_width_cm
+      - name: product_id
+        tests:
+              - unique
+              - not_null
+
+  - name: stg_product_translation
+    description: "A product translation to english"
+    columns:
+      - name: product_category_name The list name of Product
+      - name: product_category_name_english The list name of Product in English

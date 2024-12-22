@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: online_store
+    schema: dwh_online_store
+    tables:
+      - name: products_dataset
+      - name: product_category_name_translation
+      - name: order_items_dataset
