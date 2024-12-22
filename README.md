@@ -35,6 +35,7 @@ Extract data from csv, Transform and load to Google Big Query using Data Build T
    dbt init online_store
    ```
 2.   Follow instruction below
+   
    Which database would you like to use?
    [1] bigquery
 
